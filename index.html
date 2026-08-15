@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cris Brian Villo — Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Cris Brian Villo</div>
+  <nav>
+    <button class="nav-btn active" data-page="home">Home</button>
+    <button class="nav-btn" data-page="about">About</button>
+    <button class="nav-btn" data-page="contact">Contact</button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <section class="page active" id="home">
+    <h1>Hi, I'm Cris Brian Villo</h1>
+    <p class="tagline">Welcome to my simple portfolio site.</p>
+    <button class="btn" data-goto="contact">Contact Me</button>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="page" id="about">
+    <h2>About Me</h2>
+    <p class="about-text">
+      Hi! Ako si Cris Brian Villo, isang student. Currently nag-aaral ako at
+      natututo ng mga bagong bagay habang binubuo ko itong portfolio.
+      [Palitan mo ito ng school mo, course/strand, at ilang interests o skills mo.]
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="page" id="contact">
+    <h2>Contact Me</h2>
+    <p class="contact-sub">May tanong ka o gusto mo lang makipag-usap? I-message mo lang ako dito.</p>
+    <form id="contactForm">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+      <p class="form-status" id="formStatus"></p>
+    </form>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
