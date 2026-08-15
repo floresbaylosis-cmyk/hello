@@ -30,28 +30,28 @@
   <section class="page" id="about">
     <h2>About Me</h2>
     <p class="about-text">
-      Hi! Ako si Cris Brian Villo, isang student. Currently nag-aaral ako at
-      natututo ng mga bagong bagay habang binubuo ko itong portfolio.
-      [Palitan mo ito ng school mo, course/strand, at ilang interests o skills mo.]
+   Hi i'm Cris Brian B. Villo a Bachelor of Science in Information Technology (BSIT) form Central Philippines State University San Carlos Campus.
+   I study on html work with the internet and how human interact with computer.
+   
     </p>
-  </section>
+ </section>
 
   <!-- CONTACT -->
   <section class="page" id="contact">
     <h2>Contact Me</h2>
-    <p class="contact-sub">May tanong ka o gusto mo lang makipag-usap? I-message mo lang ako dito.</p>
-    <form id="contactForm">
+    <p class="contact-sub">You have a question? Just message me .</p>
+   <form id="contactForm" action="https://formspree.io/f/myegdgyo" method="POST">
       <div>
         <label for="name">Name</label>
-        <input type="text" id="name" required>
+        <input type="text" id="name" name="name" required>
       </div>
       <div>
         <label for="email">Email</label>
-        <input type="email" id="email" required>
+        <input type="email" id="email" name="email" required>
       </div>
       <div>
         <label for="message">Message</label>
-        <textarea id="message" required></textarea>
+        <textarea id="message" name="message" required></textarea>
       </div>
       <button type="submit" class="btn">Send Message</button>
       <p class="form-status" id="formStatus"></p>
